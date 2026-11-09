@@ -35,6 +35,13 @@ class Cita {
   nombreCompleto() {
     return this.nombre + " " + this.apellidos;
   }
+  nacimientoFormateado() { // he decidido añadir este método para igualar el formato de la fecha de nacimiento con el resto de fechas.
+    if (this.fechaNacimiento === "") {
+    return "";
+  }
+  const partes = this.fechaNacimiento.split("-");
+  return partes[2] + "/" + partes[1] + "/" + partes[0];
+  }
 }
 
 function citaDesdeObjeto(obj) {

@@ -83,11 +83,50 @@ form {
     margin: 24px auto;
 }
 
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 24px;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #1f2d3d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #dfe6ec;
+}
+
+th {
+    background-color: #0a6471;
+    color: #fff;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f9fa;
+}
+
+td button {
+    font-family: inherit;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .mensaje-error {
   display: block;
   color: #8e1f14;
   font-size: 0.85rem;
   min-height: 1.1rem;
+}
+
+#error-fecha {
+    grid-column: 1 / -1;
 }
 
 footer {
