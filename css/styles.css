@@ -1,0 +1,87 @@
+header {
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+
+}
+
+header h1 {
+    margin: 0;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Montserrat", sans-serif;
+}
+
+header h2 {
+    margin: 0 0 0 auto;
+    color: #2ecc71;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.0rem;
+    padding: 0,8px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #61a8fa;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #cfd8e3;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.campo input.error,
+.campo select.error,
+.campo textarea.error {
+  border: 2px solid #8e1f14;
+  background-color: #fdeded;
+}
+
+form {
+    background-color: #a5d2cb;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 24px auto;
+}
+
+.mensaje-error {
+  display: block;
+  color: #8e1f14;
+  font-size: 0.85rem;
+  min-height: 1.1rem;
+}
